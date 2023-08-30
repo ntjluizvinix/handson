@@ -8,5 +8,17 @@
 </head>
 <body>
     <h1>handson04</h1>
+    idade <input type="text" name="" id="idade">
+    <button onclick="validaIdade()">verificar</button>
+    <script>
+        function validaIdade(){
+            var idade = document.getElementById ("idade").value;
+            if (idade >= 18){
+                alert ("Usuário de maior! ")
+            }else{
+                alert ("Usuário de menor! ")
+            }
+        }
+    </script>
 </body>
 </html>
