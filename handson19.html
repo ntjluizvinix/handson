@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handson19</title>
+</head>
+<body style="background-color: aqua; color: black">
+    <img src="img/OLOGO SEMANA.png" width="666">
+    
+    <h1>Selecione um número de 1 a 7:</h1>
+    <center><input type="number" id="numero" min="1" max="7">&#128557;</center>
+    <marquee><button onclick="exibirDia()">Mostrar Dia</button></marquee>
+    <p id="resultado"></p>
+<script>
+    function exibirDia() {
+            var num = parseInt(document.getElementById("numero").value);
+            var resultado = document.getElementById("resultado");
+            var dia;
+            
+            switch (num) {
+                case 1:
+                    resultado.innerHTML = "Domingo";
+                    break;
+                case 2:
+                    resultado.innerHTML = "Segunda-feira";
+                    break;
+                case 3:
+                    resultado.innerHTML = "Terça-feira";
+                    break;
+                case 4:
+                    resultado.innerHTML = "Quarta-feira";
+                    break;
+                case 5:
+                    resultado.innerHTML = "Quinta-feira";
+                    break;
+                case 6:
+                    resultado.innerHTML = "Sexta-feira";
+                    break;
+                case 7:
+                    resultado.innerHTML = "Sábado";
+                    break;
+                default:
+                    resultado.innerHTML = "Número inválido. Insira um número de 1 a 7.";
+                    break; 
+            }
+        }
+</script>
+
+</body>
+</html>
